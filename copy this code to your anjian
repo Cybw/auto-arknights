@@ -1,0 +1,75 @@
+Randomize//初始化随机数生成器
+
+//左上角坐标
+x0 = 10 
+y0 = 50
+//右下角坐标
+x1 = 997
+y1 = 605
+
+//单局时间 龙门币130000 狗粮130000 芯片-盾奶-2 OF7 130000
+ftime = 140000
+
+//循环次数
+times = 47
+
+
+//相对坐标
+x = x1 - x0
+y = y1 - y0
+
+//跳过坐标
+ax = x0 + Int(x * 0.870314)
+ay = y0 + Int(y * 0.322522) 
+//确认坐标
+bx = x0 + Int(x * 0.833839)
+by = y0 + Int(y * 0.823423)
+//开始1坐标
+cx = x0 + Int(x * 0.898682)
+cy = y0 + Int(y * 0.909909)
+//开始2坐标
+dx = x0 + Int(x * 0.861195)
+dy = y0 + Int(y * 0.699099)
+
+//单局时间 龙门币130000 狗粮130000 芯片-盾奶-2 OF7 130000
+ftime = 140000
+
+//循环次数
+times = 47
+
+For steps = 1 To times
+	TracePrint steps
+	MoveTo ax +int(Rnd()*30), ay +int(Rnd()*30)
+	Delay 2000+int(Rnd()*2000)
+	LeftClick 1
+	Delay 1000
+	IfColor bx, by, "FFFFFF", 0 Then
+		MoveTo ax +int(Rnd()*30), ay +int(Rnd()*30)
+		Delay 1000+int(Rnd()*1000)
+		LeftClick 1
+		Delay 3000+int(Rnd()*1000)
+		LeftClick 1
+		Delay 29+int(Rnd()*1000)
+	
+		MoveTo cx+int(Rnd()*10), cy+int(Rnd()*5)
+		Delay 3000+int(Rnd()*1000)
+		LeftClick 1
+	
+		MoveTo dx+int(Rnd()*10), dy+int(Rnd()*10)
+		Delay 3000+int(Rnd()*1000)
+		LeftClick 1
+	
+		MoveTo ax+int(Rnd()*30), ay+int(Rnd()*30)
+		Delay ftime +int(Rnd()*1000)
+		LeftDown 1
+	
+		MoveTo ax+int(Rnd()*10), ay+int(Rnd()*10)
+		Delay 1000+int(Rnd()*1000)
+		LeftUp 1
+	
+		MoveTo ax+int(Rnd()*30), ay+int(Rnd()*30)
+		Delay 8000+int(Rnd()*1000)
+		LeftClick 1
+	End If
+
+Next
