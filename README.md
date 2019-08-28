@@ -1,9 +1,3 @@
 # auto-arknights
 明日方舟的按键精灵脚本 an ANJIANJINGLING scripts for arknights
-
-使用说明：
-1、打开游戏；
-2、下载按键精灵2014版；
-3、新建空白脚本，将代码拷贝进去；
-4、用“抓抓”工具抓取模拟器中的游戏界面（不是模拟器的，是模拟器中游戏界面的）的左上坐标（x0y0）和右下坐标（x1y1），
-修改代码中的坐标，
+![image](https://github.com/Cybw/auto-arknights/blob/master/readme.png)
