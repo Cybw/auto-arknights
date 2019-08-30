@@ -31,12 +31,6 @@ cy = y0 + Int(y * 0.909909)
 dx = x0 + Int(x * 0.861195)
 dy = y0 + Int(y * 0.699099)
 
-//单局时间 龙门币130000 狗粮130000 芯片-盾奶-2 OF7 130000
-ftime = 140000
-
-//循环次数
-times = 47
-
 For steps = 1 To times
 	TracePrint steps
 	MoveTo ax +int(Rnd()*30), ay +int(Rnd()*30)
