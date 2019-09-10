@@ -1,7 +1,8 @@
 # auto-arknights
 明日方舟的按键精灵脚本 an ANJIANJINGLING scripts for arknights
 
-新增无需抓取版本（https://github.com/Cybw/auto-arknights/blob/master/%E6%97%A0%E9%9C%80%E6%8A%93%E5%8F%96%E5%9D%90%E6%A0%87%20for%20%E9%9B%B7%E7%94%B5%20%E6%A8%A1%E6%8B%9F%E5%99%A8 ）：    
+新增无需抓取版本（https://github.com/Cybw/auto-arknights/blob/master/Auto%20Positioning%20for%20LEIDIAN%20simulator ）： 
+  
 1、目前只支持雷电模拟器；  
 
 2、只需修改ftime 和 times 两个变量点调试、运行即可；  
