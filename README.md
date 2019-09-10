@@ -1,6 +1,15 @@
 # auto-arknights
 明日方舟的按键精灵脚本 an ANJIANJINGLING scripts for arknights
-  
+
+新增无需抓取版本（https://github.com/Cybw/auto-arknights/blob/master/%E6%97%A0%E9%9C%80%E6%8A%93%E5%8F%96%E5%9D%90%E6%A0%87%20for%20%E9%9B%B7%E7%94%B5%20%E6%A8%A1%E6%8B%9F%E5%99%A8）：    
+1、目前只支持雷电模拟器；  
+
+2、只需修改ftime 和 times 两个变量点调试、运行即可；  
+
+3、可使用teamviewer实现远程挂机；  
+
+—————————————————————————————————————分割线—————————————————————————————————————  
+
 使用说明：  
 
 1、理论上模拟器环境中运行的app无法检测环境外运行的按键精灵，除非模拟器和游戏是一家的（比如MUMU和阴阳师）；  
