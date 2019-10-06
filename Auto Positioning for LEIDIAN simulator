@@ -48,7 +48,7 @@ dy = y0 + Int(y * 0.699099)
 For steps = 1 To times
 	TracePrint steps
 	//将窗口置于最前
-	Call Plugin.Window.Top(Hwnd, 0)
+	//Call Plugin.Window.Top(Hwnd, 0)
 	MoveTo ax +int(Rnd()*30), ay +int(Rnd()*30)
 	Delay 2000+int(Rnd()*2000)
 	LeftClick 1
