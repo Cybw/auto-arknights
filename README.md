@@ -1,9 +1,9 @@
 # auto-arknights
 明日方舟的按键精灵脚本 an ANJIANJINGLING scripts for arknights
   
-1、目前只支持雷电模拟器；  
+1、目前只支持雷电模拟器，优点在于模拟器可以任意比例缩放；  
 
-2、只需打开到图中界面，修改ftime 和 times 两个变量点调试、运行即可反复刷同一个图；  
+2、只需打开到图中界面，勾选代理指挥，修改ftime 和 times 两个变量点调试、运行即可反复刷同一个图；  
 
 3、可使用teamviewer实现远程挂机； 
   
