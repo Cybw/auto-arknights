@@ -1,11 +1,11 @@
-//单局时间 龙门币130000 狗粮130000 芯片-盾奶-2 OF7 130000 OF8 180000
-ftime = 130000
+//单局时间
+ftime = 85000
 //循环次数
-times = 5
-
-
-Randomize//初始化随机数生成器
-Delay 2000
+times = 80
+//初始化随机数生成器
+Randomize
+//teamviewer关闭时间，可删
+Delay 3000
 //下面这句是查找窗口类名("Notepad")或者标题(0),返回找到的句柄Hwnd
 Hwnd = Plugin.Window.Find("LDPlayerMainFrame", 0)
 //下面这句是得到窗口句柄的客户区大小
@@ -47,8 +47,8 @@ dy = y0 + Int(y * 0.699099)
 
 For steps = 1 To times
 	TracePrint steps
-	//将窗口置于最前
-	//Call Plugin.Window.Top(Hwnd, 0)
+	//将窗口置于最前Call Plugin.Window.Top(Hwnd, 0)
+	
 	MoveTo ax +int(Rnd()*30), ay +int(Rnd()*30)
 	Delay 2000+int(Rnd()*2000)
 	LeftClick 1
