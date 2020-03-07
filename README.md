@@ -1,15 +1,13 @@
 # auto-arknights
 明日方舟的按键精灵脚本 an ANJIANJINGLING scripts for arknights
-
-新增无需抓取版本（https://github.com/Cybw/auto-arknights/blob/master/Auto%20Positioning%20for%20LEIDIAN%20simulator ）： 
   
 1、目前只支持雷电模拟器；  
 
-2、只需修改ftime 和 times 两个变量点调试、运行即可；  
+2、只需打开到图中界面，修改ftime 和 times 两个变量点调试、运行即可反复刷同一个图；  
 
 3、可使用teamviewer实现远程挂机； 
   
-4、记得用teamviewer也要插显示器，不然模拟器无法初始化。  
+4、记得要插着显示器，笔记本要打开盖子，不然模拟器无法初始化。  
   
 5、用来刷土实在是太棒了！！！
 
@@ -29,10 +27,8 @@
 
 6、如果不担心被封可以使用比如雷电模拟器中的脚本录制，这样就可以在刷刷刷的时候干其他的事情了；  
 
-7、建议睡前挂上，可以刷到四点，基本上该清的都能清掉；
+7、建议睡前挂上，可以刷到四点，基本上该清的都能清掉； 
 
-8、按键精灵虽然自带框体坐标定位句柄，但亲测有的模拟器获取失败，还不如每次用前抓两个坐标；  
+8、Have fun！  
 
-9、Have fun！  
-
-![image](https://github.com/Cybw/auto-arknights/blob/master/readme.png)
+![image](https://github.com/Cybw/auto-arknights/blob/master/demo.png)
