@@ -6,7 +6,7 @@ times = 80
 Randomize
 //teamviewer关闭时间，可删
 Delay 3000
-//下面这句是查找窗口类名("Notepad")或者标题(0),返回找到的句柄Hwnd
+//下面这句是查找窗口类名("LDPlayerMainFrame")或者标题(0),返回找到的句柄Hwnd
 Hwnd = Plugin.Window.Find("LDPlayerMainFrame", 0)
 //下面这句是得到窗口句柄的客户区大小
 sRect = Plugin.Window.GetClientRect(Hwnd)
