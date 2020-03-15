@@ -50,10 +50,8 @@ https://github.com/Cybw/auto-arknights/blob/master/anjianjingling%20arknights
 
 4、游戏界面不应有任何阻挡，虽然脚本中设定了模拟器界面总在最前，但以免脚本按到其他地方去，可以配合火绒或者360的弹窗拦截功能；  
 
-5、本脚本的优势在于门槛低，并且理论上比较安全，适合平时的碎石玩家以及活动期间的玩家，例如夏活的扭蛋币；  
+5、按键精灵脚本的优势在于门槛低，并且理论上比较安全；  
 
-6、如果不担心被封可以使用比如雷电模拟器中的脚本录制，这样就可以在刷刷刷的时候干其他的事情了；  
+6、雷电模拟器脚本优势在于可以在刷刷刷的时候干其他的事情；  
 
 7、Have fun！  
-
-![image](https://github.com/Cybw/auto-arknights/blob/master/demo.png)
