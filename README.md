@@ -1,5 +1,6 @@
 # auto-arknights
-新增雷电模拟器内嵌录屏脚本的生成脚本
+新增雷电模拟器内嵌录屏脚本的生成脚本  
+https://github.com/Cybw/auto-arknights/blob/master/leidianjson_arkningts.py  
 
 1、雷电模拟器内置录屏功能，使用简便但是只能重复录制好的操作，这就导致了每次点击的坐标、按压时间、按压间隔都是固定的，这就有可能会被发现；   
   
@@ -17,13 +18,14 @@
     #雷电模拟器脚本路径  
     route = "C:\\ChangZhi\\dnplayer2\\vms\\operationRecords"  
 
-然后运行，就可以在模拟器的屏幕录制里面使用了
-
+然后运行，就可以在模拟器的屏幕录制里面使用了。  
+  
+![image](https://github.com/Cybw/auto-arknights/blob/master/demo2.png)  
 
 —————————————分割线————————————————  
 
-明日方舟的按键精灵脚本 an ANJIANJINGLING scripts for arknights 
-https://github.com/Cybw/auto-arknights/blob/master/Auto%20Positioning%20for%20LEIDIAN%20simulator
+明日方舟的按键精灵脚本 an ANJIANJINGLING scripts for arknights  
+https://github.com/Cybw/auto-arknights/blob/master/anjianjingling%20arknights  
   
 1、目前只支持雷电模拟器，优点在于模拟器可以任意比例缩放；  
 
@@ -33,6 +35,9 @@ https://github.com/Cybw/auto-arknights/blob/master/Auto%20Positioning%20for%20LE
   
 4、记得要插着显示器，笔记本要打开盖子，不然模拟器无法初始化。  
 
+
+![image](https://github.com/Cybw/auto-arknights/blob/master/demo.png)  
+  
 —————————————分割线————————————————  
 
 使用须知：  
