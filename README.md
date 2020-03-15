@@ -1,5 +1,30 @@
 # auto-arknights
-明日方舟的按键精灵脚本 an ANJIANJINGLING scripts for arknights
+新增雷电模拟器内嵌录屏脚本的生成脚本
+
+1、雷电模拟器内置录屏功能，使用简便但是只能重复录制好的操作，这就导致了每次点击的坐标、按压时间、按压间隔都是固定的，这就有可能会被发现；    
+  
+2、打开后发现其实就是用json将每一个操作记录下来，所以就写了一个可以直接生成一套连续点击的json，保证每次点击都是随机的；  
+
+3、用法：  
+  
+    复制python 脚本到本地，修改：  
+    
+#这个脚本的文件名  
+recordname = '剿灭'  
+#每一局的时间  
+time = 900000  
+#循环次数  
+rounds = 2  
+#雷电模拟器脚本路径  
+route = "C:\\ChangZhi\\dnplayer2\\vms\\operationRecords"  
+
+然后运行，就可以在模拟器的屏幕录制里面使用了
+
+
+—————————————分割线————————————————  
+
+明日方舟的按键精灵脚本 an ANJIANJINGLING scripts for arknights 
+https://github.com/Cybw/auto-arknights/blob/master/Auto%20Positioning%20for%20LEIDIAN%20simulator
   
 1、目前只支持雷电模拟器，优点在于模拟器可以任意比例缩放；  
 
@@ -8,12 +33,10 @@
 3、可使用teamviewer实现远程挂机； 
   
 4、记得要插着显示器，笔记本要打开盖子，不然模拟器无法初始化。  
-  
-5、用来刷土实在是太棒了！！！
 
 —————————————分割线————————————————  
 
-使用说明：  
+使用须知：  
 
 1、理论上模拟器环境中运行的app无法检测环境外运行的按键精灵，除非模拟器和游戏是一家的（比如MUMU和阴阳师）；  
 
