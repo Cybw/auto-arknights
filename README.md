@@ -1,4 +1,22 @@
 # auto-arknights
+
+新增雷电模拟器内嵌录屏脚本的生成脚本的带图形界面的生成器  
+https://github.com/Cybw/auto-arknights/blob/master/jsonmakerwithGUI.py  
+  
+如图所示，修改框体中的文件名、单次循环时间、循环次数，点击make即可生成到指定文件夹内。  
+  
+![image](https://github.com/Cybw/auto-arknights/blob/master/JsonMakerGUI.png)  
+  
+默认生成三个文件  
+short适用于1-7  
+medium适用于狗粮和龙门币  
+long适用于6-16这种时间长的  
+  
+由于tkinter的限制，不从另外的文件中读取难以实现文件的保存，所以默认的参数只能从脚本上改。如果与你的地址不匹配，或者与你常用的配置不匹配，可以自行修改脚本中的参数，然后用pyinstaller重新生成.exe文件。  
+
+
+—————————————分割线————————————————  
+
 新增雷电模拟器内嵌录屏脚本的生成脚本  
 https://github.com/Cybw/auto-arknights/blob/master/leidianjson_arkningts.py  
 
