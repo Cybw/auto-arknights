@@ -3,6 +3,17 @@ import json
 import random
 import datetime
 
+log = []
+try:
+    with open("D:\\arknights_leidian_json_config.txt",mode='r',encoding='utf-8') as ff:
+        for i in ff.readlines():
+            if i != None:
+                log.append(i.strip("\n"))
+except FileNotFoundError:
+    with open("D:\\arknights_leidian_json_config.txt", mode='w', encoding='utf-8') as ff:
+        print("Config file created as: D:\\arknights_leidian_json_config.txt")
+
+
 # 第1步，实例化object，建立窗口window
 window = tk.Tk()
  
@@ -28,40 +39,59 @@ txt8 = tk.StringVar()
 txt9 = tk.StringVar()
 
 
+if(log == None or len(log) == 0 ):
+    txt0.set('C:\\ChangZhi\\dnplayer2\\vms\\operationRecords')
+
+    txt1.set('short')
+    txt2.set('90')
+    txt3.set('20')
+
+    txt4.set('medium')
+    txt5.set('140')
+    txt6.set('10')
+
+    txt7.set('long')
+    txt8.set('190')
+    txt9.set('10')
+
+else:
+    txt0.set(log[0])
+
+    txt1.set(log[1])
+    txt2.set(log[2])
+    txt3.set(log[3])
+
+    txt4.set(log[4])
+    txt5.set(log[5])
+    txt6.set(log[6])
+
+    txt7.set(log[7])
+    txt8.set(log[8])
+    txt9.set(log[9])
+
 
 fileroute = tk.Entry(window,textvariable = txt0, show = None, width = 40)
-txt0.set('C:\\ChangZhi\\dnplayer2\\vms\\operationRecords')#模拟器脚本文件地址
+#模拟器脚本文件地址
 fileroute.pack()
 
 
 filename1 = tk.Entry(window,textvariable=txt1, show = None)#时间较短适合1-7
-txt1.set('short')
 filename1.place(x=25, y=25)
 roundtime1 = tk.Entry(window,textvariable=txt2, show = None)
-txt2.set('90')
 roundtime1.place(x=25, y=45)
 roundtimes1 = tk.Entry(window,textvariable=txt3, show = None)
-txt3.set('20')
 roundtimes1.place(x=25, y=65)
-
 filename2 = tk.Entry(window,textvariable=txt4, show = None)#时间中等适合狗粮龙门币
-txt4.set('medium')
 filename2.place(x=175, y=25)
 roundtime2 = tk.Entry(window,textvariable=txt5, show = None)
-txt5.set('140')
 roundtime2.place(x=175, y=45)
 roundtimes2 = tk.Entry(window,textvariable=txt6, show = None)
-txt6.set('10')
 roundtimes2.place(x=175, y=65)
-
 filename3 = tk.Entry(window,textvariable=txt7, show = None)#时间较长适合6-16
-txt7.set('long')
 filename3.place(x=325, y=25)
 roundtime3 = tk.Entry(window,textvariable=txt8, show = None)
-txt8.set('190')
 roundtime3.place(x=325, y=45)
 roundtimes3 = tk.Entry(window,textvariable=txt9, show = None)
-txt9.set('10')
 roundtimes3.place(x=325, y=65)
 
 
@@ -173,19 +203,45 @@ def jsonmaker(route,name,oneroundtime,times):
         json.dump(record,json_file,ensure_ascii=False,indent=4,separators=(',', ':'))
         var = 'Saved as: ' + route + "\\" + recordname + "_" + oneroundtime + "_" + times + ".record" + "\n"
         t.insert('end', var)
- 
 def generate():
     
     jsonmaker(fileroute.get(),filename1.get(),roundtime1.get(),roundtimes1.get())
     jsonmaker(fileroute.get(),filename2.get(),roundtime2.get(),roundtimes2.get())
     jsonmaker(fileroute.get(),filename3.get(),roundtime3.get(),roundtimes3.get())
+    log = [txt0.get() , txt1.get() , txt2.get() , txt3.get() , txt4.get() , txt5.get() , txt6.get() , txt7.get() , txt8.get(), txt9.get()]
+    f=open('D:\\arknights_leidian_json_config.txt', "r+")
+    f.truncate()
+    f=open("D:\\arknights_leidian_json_config.txt","w")
+    for line in log:
+        f.write(line+'\n')
+    f.close()
+    t.insert('end', "Config saved as: D:\\arknights_leidian_json_config.txt\n")
+    
+def reset():
+    
+    txt1.set('short')
+    txt2.set('90')
+    txt3.set('20')
+
+    txt4.set('medium')
+    txt5.set('140')
+    txt6.set('10')
+
+    txt7.set('long')
+    txt8.set('190')
+    txt9.set('10')    
     
     
 b1 = tk.Button(window, text='make', width=10,
                height=2, command=generate)
 b1.place(x=200, y=90)
 
-t = tk.Text(window, height=3)
+b2 = tk.Button(window, text='reset', width=5,
+               height=1, command=reset)
+b2.place(x=450, y=105)
+
+
+t = tk.Text(window, height=4)
 t.place(x=0, y=140)
  
 window.mainloop()
